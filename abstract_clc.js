@@ -1,13 +1,13 @@
 export function ContainerLayoutComponent(props) {
-  return ( 
-		<div style={{ display: "flex", flexDirection: "column" }}>
-		    <div style={{ display: "flex" }}>
-		        <span style={{ paddingLeft: "5px" }}>{props.data.label}</span>
-		    </div>
-		    <div className="detail-tag-label">
-		        <h3>{props.data.data}</h3>
-		    </div>
-		</div>
+  return (
+    <div style={{ display: "flex", flexDirection: "column" }}>
+      <div style={{ display: "flex" }}>
+        <span style={{ paddingLeft: "5px" }}>{props.data.label}</span>
+      </div>
+      <div className="detail-tag-label">
+        <h3>{props.data.data}</h3>
+      </div>
+    </div>
   );
 }
 
@@ -30,7 +30,7 @@ export function AbstractedContainerLayoutComponent(props) {
 function parent(props) {
   return (
     <>
-			{/*AbstractedContainerLayoutComponent is much simpler to use */}
+      {/*AbstractedContainerLayoutComponent is much simpler to use */}
       <AbstractedContainerLayoutComponent />
     </>
   );
